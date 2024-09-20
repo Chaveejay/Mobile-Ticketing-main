@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.banner {
+    background-color: #1e3a8a;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: left;
+  }
+  
+  .banner h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    max-width: 500px;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    font-size: 1.2em;
+    margin-left: 30px;
+  }
+
+  .icon{
+    margin-bottom: 3px;
+  }
+
+  .ticket-info-area{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+    min-height: 500px;
+    width: 410px;
+    right: 40px;
+    top: 150px;
+  }
+
+  .ticket-info-area img{
+    object-fit: fill;
+    max-width: 300px;
+  }
+  .tick-details{
+    position: relative;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+  }
+  .ticket-title{
+
+  }
+  .tick-1{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    left: 10px;
+    width: 300px;
+  }
+  .tick-price{
+   color: #1827A4;
+   
+  }
+
+  .buy-btn{
+    position: relative;
+    background-color: #1827A4;
+    border: none;
+    color: #fff;
+    border-radius: 40px;
+    max-width: 200px;
+    left: 60px;
+    padding: 5px;
+    margin: 20px 0px;
+  }
+
+
+
+
+  .info{
+    position: relative;
+    top: 20px;
+    left: 60px;
+    max-width: 300px
+  }
+
+  .info h3{
+    position: relative;
+    font-size: 25px;
+    font-weight: 900;
+  }
+
+  .info-details{
+    display: flex;
+    position: relative;
+    gap: 20px;
+    font-family: "Inter", sans-serif;
+    max-width: 400px;
+    color: #565656;
+    font-size: 15px;
+    font-weight: 700;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 20px;
+    
+  }
+
+  .policy{
+    position: relative;
+    top: 30px;
+    left: 60px;
+    max-width: 800px;
+  }
+
+  .policy h3{
+    position: relative;
+    font-size: 25px;
+    font-weight: 900;
+  }
+
+  .policy p{
+    position: relative;
+    max-width: 800px;
+    top: 10px;
+    margin-left: 30px;
+  }
+
+   @media (max-width: 1200px) {
+
+    .ticket-info-area{
+      position: relative;
+      top: 20px;
+      left: 10px;
+      margin-bottom: 30px;
+    }
+    .info {
+      position: absolute;
+      top: 350px;
+      left: 430px;
+    }
+    .policy{
+      position: absolute;
+      top: 600px;
+      left: 430px;
+      max-width: 600px;
+    }
+    
+    }
+  @media (max-width: 870px) {
+
+    .ticket-info-area{
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .info{
+      position: relative;
+      top: 20px;
+      left: 30px;
+    }
+    .policy{
+      position: relative;
+      top: 30px;
+      left: 25px;
+      max-width: 600px;
+      padding-bottom: 20px;
+    }
+
+    .policy p{
+      top: 10px;
+      margin-left: 0px;
+    }
+
+    .info-details{
+      margin-left: 0px;
+      margin-top: 20px;
+      
+    }
+
+  }
+
+  @media (max-width: 630px) {
+    .ticket-info-area{
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .policy{
+      position: relative;
+      top: 30px;
+      left: 25px;
+      
+      max-width: 400px;
+    }
+
+  }
+
+  @media (max-width: 430px) {
+    .ticket-info-area{
+      position: relative;
+      margin-left: 0px;
+      margin-right: 0px;
+      max-width: 340px;
+      
+    }
+    .policy{
+      position: relative;
+      top: 30px;
+      left: 25px;
+      
+      width: 320px;
+    }
+
+  }
+   
+
+
+
+

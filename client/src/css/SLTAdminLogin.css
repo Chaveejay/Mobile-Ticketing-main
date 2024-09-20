@@ -1,0 +1,97 @@
+/* SLTAdminLogin.css */
+
+.slt-admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .slt-admin-login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  .slt-admin-title {
+    margin-bottom: 2rem;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .slt-admin-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .slt-admin-button {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #1827A4;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .slt-admin-button:hover {
+    background-color: #1827A4;
+  }
+  
+  .slt-admin-back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1827A4;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+  }
+  
+  .slt-admin-back-button:hover {
+    background-color: #1827A4;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .slt-admin-login-container {
+      width: 90%;
+      padding: 1rem;
+    }
+  
+    .slt-admin-button, .slt-admin-back-button {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .slt-admin-button, .slt-admin-back-button {
+      padding: 0.4rem;
+      font-size: 0.8rem;
+    }
+    .slt-admin-back-button{
+        visibility: hidden;
+    }
+  }
+  

@@ -1,0 +1,60 @@
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 300px;
+    min-height: 500px;
+    border: 2px solid black;
+}
+.card h2{
+    font-size:30px;
+}
+
+.price1{
+    font-size: 25px;
+    color: blue;
+    font-weight: 700;
+}
+.desc{
+    max-width: 200px;
+    text-align: center;
+}
+
+.features {
+    font-weight: 700;
+    max-width: 250px;
+    margin: 0px 10px;
+    min-height:fit-content;
+}
+
+.try{
+    position: relative;
+    font-weight: 500;
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+    border-radius: 40px;
+    width: 150px;
+    bottom: -50px;
+}
+
+.try:hover{
+    font-weight: 500;
+    border: 1px solid blue;
+    background-color: white;
+    color: blue;
+}
+
+.banner h1{
+    max-width: 600px;
+}
+
+.container-3{
+    position: relative;
+    justify-content: center;
+    top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}

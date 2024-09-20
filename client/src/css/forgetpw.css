@@ -1,0 +1,74 @@
+/* Container styling */
+.forgot-password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff; /* Adjusted background color to match image */
+  }
+  
+  /* Box styling */
+  .forgot-password-box {
+    background-color: #1827A4; /* Match the blue color */
+    padding: 150px 30px; /* Increase the padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    min-height: 300px; /* Set a minimum height */
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .forgot-password-box h2 {
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+  
+  .forgot-password-box p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  /* Input styling */
+  .phone-number-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  /* Button styling */
+  .next-button {
+    background-color: #1827A4;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .next-button:hover {
+    background-color: white;
+    color: #1827A4;
+  }
+  
+  .paragraph{
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+
+    .back-button{
+      visibility: hidden;
+    }
+  }

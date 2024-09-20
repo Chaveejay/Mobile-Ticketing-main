@@ -1,0 +1,97 @@
+/* TicketVerifier.css */
+
+.ticket-verifier-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .ticket-verifier-login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  .ticket-verifier-title {
+    margin-bottom: 2rem;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .ticket-verifier-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .ticket-verifier-button {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #1827A4;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .ticket-verifier-button:hover {
+    background-color: #1827A4;
+  }
+  
+  .ticket-verifier-back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1827A4;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+  }
+  
+  .ticket-verifier-back-button:hover {
+    background-color: #1827A4;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .ticket-verifier-login-container {
+      width: 90%;
+      padding: 1rem;
+    }
+  
+    .ticket-verifier-button, .ticket-verifier-back-button {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ticket-verifier-button, .ticket-verifier-back-button {
+      padding: 0.4rem;
+      font-size: 0.8rem;
+    }
+    .ticket-verifier-back-button{
+        visibility: hidden;
+    }
+  }
+  

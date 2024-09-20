@@ -1,0 +1,82 @@
+.reqcard-layout{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 400px;
+    height: 180px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.reqcard-title{
+    position: relative;
+    top: 10px;
+    color: #18299F;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.reqcard-location{
+    color: #565656;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.reqcard-view-ereq {
+    position: relative;
+    top: 20px;
+    font-weight: 900;
+    color: black;
+}
+.reqcard-date{
+    position: relative;
+    width: 120px;
+    right: 130px;
+    text-align: center;
+    top: 30px;
+    font-size: 0.7rem;
+}
+.date-1{
+    font-weight: 900;
+}
+.time-1{
+    font-weight: 900;
+}
+.reqcard-date-date{
+    text-align: center;
+}
+.reqcard-time{
+    position: relative;
+    width: 120px;
+    text-align: center;
+    bottom: 14px;
+    left: 125px;
+    font-size: 0.7rem;
+}
+
+@media (max-width: 430px) {
+    .reqcard-layout {
+        width: 360px;
+        height: 170px;
+     } 
+     .reqcard-title{
+        font-size: 0.9rem;
+        font-weight: 700;
+     }
+     .reqcard-location{
+        color: #565656;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+    .reqcard-view-ereq {
+        position: relative;
+        top: 10px;
+        font-size: 0.8rem;
+        font-weight: 900;
+        color: black;
+    }
+    .reqcard-date{
+        font-size: 0.6rem;
+    }
+    .reqcard-time{
+        font-size: 0.6rem;
+    }
+   }

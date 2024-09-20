@@ -1,0 +1,22 @@
+.event-request{
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1300px;
+    margin: 40px 100px;
+}
+
+@media (max-width: 1500px) {
+ .event-request {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+      padding: 0px 0px;
+      margin: 0px 0px;
+    
+  } 
+}
+
+

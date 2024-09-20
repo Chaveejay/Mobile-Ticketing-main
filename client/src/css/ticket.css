@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ticket {
+    display: flex;
+    border: 1px solid #ddd;
+    width: 700px;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .ticket:hover{
+    cursor: pointer;
+  }
+
+  .left-side{
+    width: 380px;
+  }
+  .ticket-image img {
+    width: 380px;
+    height: 156px;
+  }
+  .ticket-details{
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+  }
+  .date span, .time span{
+    color: #565656;
+  }
+
+  .right-side{
+    width: 100%;
+    
+  }
+
+  .event-title{
+    font-size: 1em;
+    padding: 10px 30px 0px;
+    text-align: center;
+    font-weight:900;
+  }
+  .location{
+    font-size: 15px;
+    padding-top: 10px;
+    text-align: center;
+    color: #565656;
+  }
+
+  .price-area{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    gap: 10px;
+  }
+  .price{
+    font-weight: bold;
+  }
+  .t-id{
+    font-size:0.5rem;
+  }
+
+   /* Mobile responsiveness */
+   @media (max-width: 630px) {
+
+    .ticket{
+      width: 500px;
+    }
+
+    .left-side{
+       width: 100%; 
+       height: 100%;
+    }
+
+    .event-title{
+      font-size: 0.8em;
+      padding: 10px 10px 0px;
+      text-align: center;
+      font-weight:900;
+    }
+
+    .location{
+      font-size: 10px;
+      padding-top: 5px;
+      text-align: center;
+      
+    }
+    .price-area{
+      font-size: 12px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 5px;
+      gap: 5px;
+    }
+    .ticket-image img {
+      width: 100%;
+    }
+
+
+    }
+
+    /* .ticket-details{
+      font-size: 10px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 10px;
+    } */
+
+    @media (max-width: 600px) {
+
+      .ticket{
+        width: 400px;
+      }
+    
+      .left-side{
+        width: 100%; 
+       height: 100%;
+      }
+  
+      .event-title{
+        font-size: 0.8em;
+        padding: 10px 10px 0px;
+        text-align: center;
+        font-weight:900;
+      }
+  
+      .location{
+        font-size: 10px;
+        padding-top: 5px;
+        text-align: center;
+        
+      }
+      .price-area{
+        font-size: 12px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5px;
+        gap: 5px;
+      }
+      .ticket-image img {
+        width: 100%;
+      }
+    }
+
+  

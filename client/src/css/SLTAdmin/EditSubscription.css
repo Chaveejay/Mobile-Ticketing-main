@@ -1,0 +1,155 @@
+.add-subscription-container {
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f8f8;
+  }
+
+  .subscription-container {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    }
+  
+  .subscription-section {
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+  
+  .subscription-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .subscription-form-label {
+    font-size: 14px;
+    /*font-weight: bold;*/
+    margin-bottom: 5px;
+    color: #000000;
+  }
+  
+  .subscription-fields {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .subscription-input {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #4C5BB9;
+    background-color: #E9F7FA;
+    border-radius: 5px;
+  }
+  
+  .subscription-features {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .feature-input {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #4C5BB9;
+    background-color: #E9F7FA;
+    border-radius: 5px;
+  }
+  
+  .subscription-buttons {
+    display: flex;
+    column-gap: 5px;
+  }
+  
+  .subscription-save-button, .subscription-edit-button, .subscription-delete-button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .subscription-save-button {
+    background-color: #0014d3;
+    color: white;
+  }
+  
+  .subscription-edit-button {
+    background-color: #1827A4;
+    color: white;
+  }
+  
+  .subscription-delete-button {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .add-subscription-button {
+    background-color: #1827A4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin: 20px auto 0 auto; /* Center the button */
+    width: 50%;
+    display: block; /* Ensure the button is treated as a block element */
+  }
+  .subscription-save-button,.subscription-edit-button,.add-subscription-button:hover {
+    background-color: #101a64; /* Darker shade for hover effect */
+  }
+  
+  .subscription-delete-button:hover {
+    background-color: #a80000; /* Darker shade for hover effect */
+  }
+  /* Mobile Styles */
+  @media screen and (max-width: 768px) {
+    .subscription-fields, .subscription-features {
+      flex-direction: column;
+    }
+  
+    .subscription-input, .feature-input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .subscription-buttons {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .save-button, .edit-button, .delete-button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .add-subscription-button {
+      padding: 12px;
+      font-size: 16px;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .subscription-title {
+      font-size: 16px;
+    }
+  
+    .subscription-input, .feature-input {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .save-button, .edit-button, .delete-button {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .add-subscription-button {
+      padding: 12px;
+      font-size: 16px;
+      width: 100%;
+    }
+  }
+  

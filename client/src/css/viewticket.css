@@ -1,0 +1,110 @@
+.banner {
+   margin: 0; /* Remove any default margin */
+   padding: 0; /* Remove any default padding */
+}
+
+.viewticket-ticket {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   top: 0; /* Adjust top to 0 or remove if not needed */
+   margin-inline: auto;
+   max-width: 480px;
+   min-height: 540px;
+   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+   padding: 10px 0;
+}
+
+.viewticket-ticket-title {
+   color: #18299F;
+   font-weight: 700;
+   font-size: 1.2rem;
+   text-align: center;
+}
+
+.viewticket-ticket-image {
+   position: relative;
+   margin: 10px 0;
+}
+
+.viewticket-ticket-image img {
+   max-width: 200px; 
+   min-height: 100px; 
+}
+
+.viewticket-ticket-location {
+   margin-top: 10px;
+   font-size: 15px;
+   text-align: center;
+   color: #565656;
+}
+
+.viewticket-ticket h6 {
+   font-weight: 700;
+}
+
+.tid {
+   font-size: 0.8rem;
+   font-weight: 600;
+   color: #565656;
+}
+
+.viewticket-ticket p {
+   font-size: 0.8rem;
+   font-weight: 700;
+   margin: 10px 0;
+}
+
+.qr-img {
+   max-width: 190px;
+   height: 190px;
+}
+
+.date-and-time {
+   position: relative;
+   width: 350px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.tick-date {
+   text-align: center;
+}
+
+@media (max-width: 480px) {
+   .viewticket-ticket {
+       margin-inline: 10px;
+       min-height: 500px;
+   }
+
+   .viewticket-ticket-image img {
+       max-width: 260px; 
+       min-height: 100px; 
+   }
+
+   .viewticket-ticket-title {
+       font-size: 1rem;
+   }
+
+   .viewticket-ticket-location {
+       font-size: 12px;
+   }
+
+   .viewticket-ticket h6 {
+       font-size: 0.8rem;
+   }
+
+   .tid {
+       font-size: 0.7rem;
+   }
+
+   .qr-img {
+       max-width: 80px;
+       height: 80px;
+   }
+
+   .date-and-time {
+       width: 300px;
+   }
+}

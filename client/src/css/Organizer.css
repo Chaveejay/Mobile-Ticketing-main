@@ -1,0 +1,240 @@
+/* Organizer.css */
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 900px;
+  min-height: 550px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.form-section,
+.info-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.form-section {
+  background-color: white;
+}
+
+.info-section {
+  background-color: #1827A4;
+  color: white;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.input {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+ 
+.button {
+  width: 50%;
+  max-width: 300px;
+  padding: 0.5rem 1rem;
+  background-color: #1827A4;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #1827A4;
+}
+ 
+.secondary-button {
+  width: 50%;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 40px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+}
+
+.secondary-button:hover {
+  background-color: white;
+  color: #1827A4;
+  text-decoration: none;
+}
+
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.link:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.back-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1827A4;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 40px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+}
+
+.back-button:hover {
+  background-color: #1827A4;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .info-section {
+    order: 2; /* Move the info section under the form section */
+  }
+}
+
+
+/* OTP Verification Page Styles */
+.otp-container {
+  overflow: hidden;
+  background-color: #1827A4;
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.otp-input {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.otp-input:focus {
+  outline: none;
+  border-color: #1827A4;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .login-container, .otp-container {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .otp-input {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 0.25rem;
+    font-size: 1rem;
+  }
+
+  .button, .secondary-button, .back-button {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .otp-input {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0 0.2rem;
+    font-size: 0.9rem;
+  }
+
+  .back-button{
+    visibility: hidden;
+  }
+
+  .button, .secondary-button, .back-button {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+}
+
+.link-button:hover {
+  color: #0056b3;
+}
+
+
+/* Styles for the Add Another Ticket Type button */
+.add-ticket-button {
+  display: inline-block; /* Align button inline */
+  margin-top: 10px; /* Add spacing above */
+  padding: 8px 16px; /* Button padding for size */
+  background-color: #1827A4; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 14px; /* Font size */
+  transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+/* Hover effect for the button */
+.add-ticket-button:hover {
+  background-color: #1827A4; /* Darker blue on hover */
+}

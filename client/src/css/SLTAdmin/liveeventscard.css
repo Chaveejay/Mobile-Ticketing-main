@@ -1,0 +1,49 @@
+.live-events-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #00B4EB;
+    border-radius: 5px;
+    height: 500px;
+    width: 300px;
+}
+
+.live-events-card-img{
+    position: relative;
+    top: 15px;
+    max-width: 300px;
+    height: 250px;
+}
+.live-events-card-view{
+    position: relative;
+    top: 20px;
+    margin: 15px 0px;
+    color: black;
+    font-weight: 700;
+}
+.live-events-card-view a{
+    text-decoration: none;
+    color: black;
+}
+.live-events-card-title{
+    width: 200px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .live-events-card-details{
+    position: relative;
+    top: 10px;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    color: #565656;
+  }
+  .live-events-icon{
+    position: relative;
+    bottom: 2px;
+  }

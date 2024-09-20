@@ -1,0 +1,91 @@
+.event-card-actions {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: flex-start; /* Align buttons to the start of the container */
+    gap: 10px; /* Add some space between the buttons */
+  }
+  
+  .event-card-actions button {
+    width: 100%; /* Make buttons take full width of the parent container */
+    padding: 10px 30px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .btn-edit-event,
+  .btn-add-verifier {
+    background-color: #18299F; /* Blue color */
+    color: white;
+  }
+  
+  /* .btn-edit-event:hover,
+  .btn-add-verifier:hover {
+    background-color: #0056b3; 
+  } */
+  
+  .btn-delete-request {
+    background-color: #F23B3B; /* Red color */
+    color: white;
+  }
+/*   
+  .btn-delete-request:hover {
+    background-color: #c82333; 
+  } */
+
+  .event-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #00B4EB;
+    border-radius: 5px;
+    height: auto; /* Allow card height to adjust based on content */
+    width: 300px;
+    padding: 15px; /* Add some padding for better spacing */
+    box-sizing: border-box; /* Include padding and border in width/height calculations */
+  }
+  
+  .event-card-img {
+    max-width: 100%;
+    height: auto; /* Keep the aspect ratio */
+    border-radius: 5px; /* Add border-radius for consistent design */
+    margin-bottom: 20px; /* Add space between image and title */
+  }
+  
+  
+  .event-card-title{
+    width: 200px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  
+    .events-section{
+      position: relative;
+      top: 20px;
+      margin-left: 40px;
+      margin-right: 40px;
+      max-width: 1500px;
+      /* background: #00B4EB; */
+    }
+  
+    .event-container{
+      position: relative;
+      top: 10px;
+      padding-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+  
+    @media (max-width: 699px) {
+      .event-container{
+        margin-left: auto;
+        margin-right: auto;
+      }
+  
+    }

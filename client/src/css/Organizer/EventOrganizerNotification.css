@@ -1,0 +1,120 @@
+.event-notification-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+  }
+  
+  .notification-sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .notification-tab {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .notification-tab.active {
+    background-color: #6c9dce;
+    color: white;
+  }
+  
+  .notification-content {
+    width: 80%;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .mark-read-btn {
+    font-size: small;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #1827A4;
+    color: white;
+    border: none;
+    border-radius: 25px;
+  }
+  
+  .notification-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .notification-item.unread {
+    background-color: #BDD6EE; /* Light blue for unread notifications */
+  }
+  
+  .notification-item.read {
+    background-color: white; /* White for read notifications */
+  }
+  
+  .notification-details {
+    flex-grow: 1;
+  }
+  
+  h1, h2, p {
+    margin: 0;
+  }
+  
+  /* Adjustments for tablets */
+  @media screen and (max-width: 768px) {
+    .notification-sidebar {
+      width: 30%;
+    }
+  
+    .notification-content {
+      width: 70%;
+    }
+  
+    .notification-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  /* Adjustments for mobile phones */
+  @media screen and (max-width: 480px) {
+    .event-notification-container {
+      flex-direction: column;
+    }
+  
+    .notification-sidebar {
+      width: 100%;
+      order: 1; /* Sidebar moves top the content area */
+    }
+  
+    .notification-content {
+      width: 100%;
+      order: 1;
+    }
+  
+    .notification-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .notification-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .mark-read-btn {
+      margin-top: 10px;
+    }
+  }
+  

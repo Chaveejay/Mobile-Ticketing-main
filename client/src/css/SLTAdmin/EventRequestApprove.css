@@ -1,0 +1,208 @@
+.eventreq-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #edf1f3;
+    font-family: Arial, sans-serif; 
+  }
+  .eventreq-container2 {
+    max-width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  .eventreq-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .eventreq-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .eventreq-field {
+      width: 100%;
+      margin-bottom: 15px;
+  }
+  
+  .eventreq-field label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .eventreq-field p {
+    background-color: #ffffff;
+    border: 1px solid #4C5BB9;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .eventreq-images {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .eventreq-image-container {
+    flex: 1;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #1827A4;
+    border-radius: 5px;
+  }
+  
+  .eventreq-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .eventreq-event-image {
+    max-width: 300px;
+    max-height: 250px;
+    padding: 5px;
+    border-radius: 5px;
+    justify-items: center;
+  }
+  .eventreq-ticket-image {
+    min-width: 400px;
+    max-height: 200px;
+    padding: 5px;
+    justify-items: center;
+  }
+  
+  .eventreq-tickets {
+    flex: 1 1 100%;
+  }
+  
+  .eventreq-ticket-group {
+    display: flex;
+    column-gap: 50px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .eventreq-ticket {
+    flex: 1 1 30%;
+    padding: 10px;
+    background-color: #f0f8ff;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+  }
+  
+  .eventreq-ticket label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .eventreq-promotional-offer {
+    flex: 1 1 50%;
+  }
+  
+  .eventreq-contact-info {
+    flex: 1 1 50%;
+  }
+  
+  .eventreq-additional-notes {
+    flex: 1 1 50%;
+  }
+  
+  .eventreq-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .eventreq-action-button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .eventreq-action-button.confirm {
+    background-color: #24b324;
+  }
+  
+  .eventreq-action-button.decline {
+    background-color: #d32f2f;
+  }
+  
+  .eventreq-action-button.back {
+    background-color: #1827A4;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .eventreq-container {
+      padding: 10px;
+    }
+  
+    .eventreq-title {
+      font-size: 20px;
+    }
+  
+    .eventreq-field label, .eventreq-field p {
+      font-size: 14px;
+    }
+  
+    .eventreq-actions {
+      flex-direction: column;
+    }
+  
+    .eventreq-action-button {
+      margin: 10px 0;
+      width: 100%;
+    }
+
+    .eventreq-field p {
+      background-color: #ffffff;
+      border: 1px solid #4C5BB9;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    
+  }
+  
+  @media screen and (max-width: 480px) {
+    .eventreq-container,.eventreq-container2 {
+      padding: 10px;
+    }
+  
+    .eventreq-title {
+      font-size: 18px;
+    }
+  
+    .eventreq-field label, .eventreq-field p {
+      font-size: 12px;
+    }
+  
+    .eventreq-actions {
+      flex-direction: column;
+    }
+  
+    .eventreq-action-button {
+      font-size: 14px;
+      margin: 6px 0;
+      width: 100%;
+    }
+    .eventreq-field p {
+      background-color: #ffffff;
+      border: 1px solid #4C5BB9;
+      padding: 4px;
+      border-radius: 5px;
+    }
+
+  }

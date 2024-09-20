@@ -1,0 +1,133 @@
+/* Base styles for all screen sizes */
+.addverifier-container {
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  text-align: center; /* Center-align content */
+}
+
+.addverifier-event-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 25px;
+}
+
+.addverifier-event-image-container {
+  display: flex;
+  justify-content: center; /* Center the image */
+  margin-bottom: 20px;
+}
+
+.addverifier-event-image {
+  width: 100%;
+  max-width: 300px;  /*Adjust as needed */
+  height: auto;
+  border-radius: 25px;
+}
+
+.addverifier-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.addverifier-row {
+  display: flex;
+  justify-content: center; /* Center the inputs and buttons */
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto; /* Center the row */
+}
+
+
+.addverifier-phone-input {
+  flex: 1;
+  padding: 8px;
+  border: 3px solid #cbd2d6;
+  border-radius: 10px;
+  margin-right: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+}
+
+.addverifier-edit-button,
+.addverifier-add-button {
+  padding: 0.5rem 3rem;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap; /* Ensure text doesn’t wrap inside the button */
+}
+
+.addverifier-edit-button {
+  background-color: #24b324; /* Green button */
+  color: white;
+  margin-right: 10px;
+}
+
+.addverifier-add-button {
+  background-color: #1827A4; /* Blue button */
+  color: white;
+}
+
+.addverifier-edit-button:hover,
+.addverifier-add-button:hover {
+  opacity: 0.9;
+}
+
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+  .addverifier-event-name {
+    font-size: 20px;
+  }
+
+  .addverifier-row {
+    flex-direction: column; /* Stack the inputs and buttons */
+    align-items: stretch;
+  }
+
+  .addverifier-phone-input {
+    margin-right: 0;
+    margin-bottom: 10px; /* Space between input and buttons */
+  }
+
+  .addverifier-edit-button,
+  .addverifier-add-button {
+    width: 100%;
+    margin: 5px 0; /* Space between buttons */
+    padding: 12px; /* Make buttons bigger for easier touch */
+  }
+
+  .addverifier-row:not(:last-child) {
+    margin-bottom: 20px; /* Space between rows */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .addverifier-event-name {
+    font-size: 18px;
+  }
+
+  .addverifier-heading {
+    font-size: 18px;
+  }
+
+  .addverifier-phone-input {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .addverifier-edit-button,
+  .addverifier-add-button {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
